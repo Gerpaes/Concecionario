@@ -1,0 +1,7 @@
+Model\Gerente.class
+Vista\Main.class
+Vista\Trabajo.class
+Controlador\Concecionario.class
+Model\Empleado.class
+Model\Vendedor.class
+Model\Mecanico.class
