@@ -113,17 +113,17 @@ public class Concecionario {
         
         for(Empleado e : empleados){
             if(e instanceof Vendedor){
-               totalvendedores +=e.calcularSueldo();
+               
             System.out.println("Vendedor " + totalvendedores);
                 
             }
             if(e instanceof Mecanico){
-                totalmecanico +=e.calcularSueldo();
+                
             System.out.println("Mecanico " + totalmecanico);
                
             }
             if(e instanceof Gerente){
-                totalgerente +=e.calcularSueldo();
+                
             System.out.println("Gerente " + totalgerente);
                
             }
