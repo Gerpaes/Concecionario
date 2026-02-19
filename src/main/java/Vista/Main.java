@@ -4,7 +4,7 @@
 
 package Vista;
 
-import Controlador.Concecionario;
+import Controlador.Concesionario;
 import Model.Empleado;
 import Model.Gerente;
 import Model.Mecanico;
@@ -20,8 +20,8 @@ public class Main {
     static Scanner sca = new Scanner(System.in);
     
     public static void main(String[] args) {
-        Concecionario.crearConcecionario();
-        Concecionario.test();
+        Concesionario.crearConcecionario();
+        Concesionario.test();
         menu();
         
     }
@@ -43,19 +43,19 @@ public class Main {
 
             switch (opc) {
                 case 1:
-                    Concecionario.agregarEmpleado();
+                    Concesionario.agregarEmpleado();
                     
                     break;
                 case 2:
-                    Concecionario.trabajoTodos();
+                    Concesionario.trabajoTodos();
                     
                     break;
                 case 3:
-                    Concecionario.mostrarSueldo();
+                    Concesionario.mostrarSueldo();
                     
                     break;
                 case 4:
-                    Concecionario.balanceSueldos();
+                    Concesionario.balanceSueldos();
                     
                     break;
                 case 5:

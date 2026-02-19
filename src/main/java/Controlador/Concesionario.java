@@ -15,11 +15,11 @@ import java.util.Scanner;
  *
  * @author Estudio-Trabajo
  */
-public class Concecionario {
+public class Concesionario {
     public String nombre;
     public static ArrayList<Empleado> empleados = new ArrayList<>();
     static Scanner sca = new Scanner(System.in);
-    public Concecionario(String nombre) {
+    public Concesionario(String nombre) {
         this.nombre = nombre;
     }
 
@@ -45,12 +45,12 @@ public class Concecionario {
     }
     
      public static void test(){
-    Concecionario.agregarEmpleado(new Vendedor("Luis"));
-    Concecionario.agregarEmpleado(new Vendedor("Pedro"));
-    Concecionario.agregarEmpleado(new Mecanico("Jose"));
-    Concecionario.agregarEmpleado(new Mecanico("Nati"));
-    Concecionario.agregarEmpleado(new Gerente("Isa"));
-    Concecionario.agregarEmpleado(new Gerente("Paco"));
+    Concesionario.agregarEmpleado(new Vendedor("Luis"));
+    Concesionario.agregarEmpleado(new Vendedor("Pedro"));
+    Concesionario.agregarEmpleado(new Mecanico("Jose"));
+    Concesionario.agregarEmpleado(new Mecanico("Nati"));
+    Concesionario.agregarEmpleado(new Gerente("Isa"));
+    Concesionario.agregarEmpleado(new Gerente("Paco"));
     }
          
          
@@ -59,7 +59,7 @@ public class Concecionario {
         System.out.println("Cual sera el nombre del concecionario? ");
         String nombre = sca.nextLine();
         
-       Concecionario concecionario = new Concecionario(nombre);
+       Concesionario concecionario = new Concesionario(nombre);
                System.out.println( concecionario + " se ha creado correctamente");
     }
     
@@ -87,7 +87,7 @@ public class Concecionario {
                 break;
         }
         if (emp != null) {
-    Concecionario.agregarEmpleado(emp);
+    Concesionario.agregarEmpleado(emp);
     System.out.println("Empleado agregado correctamente");
 }   
        }
@@ -114,20 +114,21 @@ public class Concecionario {
         for(Empleado e : empleados){
             if(e instanceof Vendedor){
                
-            System.out.println("Vendedor " + totalvendedores);
+            System.out.println("Vendedor " + e.calcularSueldo());
                 
             }
             if(e instanceof Mecanico){
                 
-            System.out.println("Mecanico " + totalmecanico);
+            System.out.println("Mecanico " + e.calcularSueldo());
                
             }
             if(e instanceof Gerente){
                 
-            System.out.println("Gerente " + totalgerente);
+            System.out.println("Gerente " + e.calcularSueldo());
                
             }
         }
+        System.out.println("");
             
     }
        public static void balanceSueldos() {
